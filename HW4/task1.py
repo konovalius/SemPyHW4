@@ -8,11 +8,12 @@ N = int(input("Введите размер первого массива: "))
 M = int(input("Введите размер второго массива: "))
 lst_1 = []
 lst_2 = []
-for i in range(N):
+
+for _ in range(N):
     n = input('введите число первого массива: ')
     lst_1.append(n)
 
-for i in range(M):
+for _ in range(M):
     m = input('а теперь второго: ')
     lst_2.append(m)
 
@@ -25,5 +26,7 @@ for i in lst_1:
         if i==j:
             lst_3.append(i)         
 #lst_3 = lst_1.intersection(lst_2)
-
-print(sorted(lst_3)) 
+if lst_3==[]:
+    print("Совпадений нет")
+else:    
+    print(sorted(lst_3)) 
