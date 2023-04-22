@@ -12,3 +12,15 @@
 собрать за один заход собирающий модуль, находясь перед некоторым кустом 
 заданной во входном файле грядки."""
 
+n = int(input('Введите количество кустов: '))
+sum = []
+for i in range(n):
+    a = int(input('Введите количество ягод на кусте: '))
+    sum.append(a)
+
+max_sum = []
+for i in range(len(sum) - 1):
+    max_sum.append(sum[i - 1] + sum[i] + sum[i + 1])
+
+
+print(max(max_sum))
